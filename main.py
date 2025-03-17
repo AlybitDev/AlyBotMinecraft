@@ -12,7 +12,7 @@ bot = mineflayer.createBot({'host': 'server-url/ip', 'port': server-port, 'usern
 
 # The spawn event
 once(bot, 'login')
-bot.chat("Hello there! To use me put Alybot in you chat message and I'll respond. My owner is Alybit.")
+bot.chat("Hello there! To use me put Alybot in you chat message and I'll respond.")
 
 @On(bot, 'chat')
 def onChat(this, user, message, *rest):
