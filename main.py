@@ -11,6 +11,9 @@ bot.chat(pass)
 @On(bot, 'chat')
 def onChat(this, user, message, *rest):
   print(f'{user} said "{message}"')
+  
+  if message.startswith('AlyBot'):
+    pass
 
   # If the message contains stop, remove the event listener and stop logging.
   if 'stop' in message:
