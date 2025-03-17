@@ -1,2 +1,2 @@
 # AlyBotMinecraft
-[AlyBotDiscord](https://github.com/AlybitDev/AlyBotDiscord) but in Minecraft using Mineflayer and openai libary.
+A Minecraft Bot "Powered by AI" with which you can talk written in Python using the mineflayer (with the javascript library) and openai library.
