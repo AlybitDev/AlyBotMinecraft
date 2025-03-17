@@ -12,9 +12,12 @@ bot.chat(pass)
 def onChat(this, user, message, *rest):
   print(f'{user} said "{message}"')
   
-  if message.startswith('AlyBot'):
-    pass
+  #if message.startswith('AlyBot'):
+  #  pass
 
+  if 'Alybot' or 'AlyBot' or 'alybot' in message:
+    pass
+  
   # If the message contains stop, remove the event listener and stop logging.
   if 'stop' in message:
     off(bot, 'chat', onChat)
