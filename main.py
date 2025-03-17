@@ -7,3 +7,11 @@ bot = mineflayer.createBot({ 'host': 'server-url/ip', 'port': server-port, 'user
 # The spawn event
 once(bot, 'login')
 bot.chat(pass)
+
+@On(bot, 'chat')
+def onChat(this, user, message, *rest):
+  print(f'{user} said "{message}"')
+
+  # If the message contains stop, remove the event listener and stop logging.
+  if 'stop' in message:
+    off(bot, 'chat', onChat)
